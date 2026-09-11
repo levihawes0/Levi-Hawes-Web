@@ -19,7 +19,7 @@ After STOP 1, help the student propose and approve the six TARGET lines and one 
 
 ## My standing rule
 
-[One observable, student-approved rule that protects this project's purpose or experience.]
+Require renters to select exactly one property they are renting before submitting a service request, and include that property in the pre-addressed email.
 
 ## Workflow
 
