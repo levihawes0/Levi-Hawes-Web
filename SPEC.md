@@ -1,10 +1,10 @@
-# TARGET: today's build
+# TARGET: secure rental portal
 
-- **Thing:** A one-page HB Design & Construction rental-property site where renters browse approved property listings and send a service request by email.
-- **Audience:** HB Design & Construction's property manager, who needs a clear view of listings, and renters, who need to find their rented property and report a maintenance need.
-- **Requirements:** One working primary interaction: browse property cards, select the property the renter is renting, and submit a service request addressed to `levihawes0@gmail.com`; selected property and request details are understandable; honor my approved standing rule in AGENTS.md.
-- **Guardrails:** Static browser code. No required external service, keys, accounts, runtime AI, or private data. Label fictional or sample content. Preserve the example and publishing setup. Work on a branch and wait for human review before shipping.
-- **Experience:** A University of Oregon-inspired look using coordinated green and yellow, with a large stylized O as the opening visual; it is distinctly HB Design & Construction, not an official University of Oregon site.
-- **Test:** I can browse the available-property cards, select exactly one property I rent, and submit a service request that opens a correctly addressed email with the chosen property and request details. The form blocks submission without a selection. After I approve and merge, the same registered Pages URL works.
+- **Thing:** A secure HB Design & Construction rental portal where renters browse properties, create accounts, apply, and submit service requests; the property manager can securely add, edit, delete, and attach photos to listings.
+- **Audience:** HB Design & Construction's property manager, who needs private property and application controls, and renters, who need a secure way to view listings and submit their own applications and service requests.
+- **Requirements:** Supabase email/password signup and sign-in; manager-only property and photo management; renter application and service-request forms; persistent records with understandable success and error states; honor my approved standing rule in AGENTS.md.
+- **Guardrails:** Use Supabase Auth, Postgres, Storage, and Row Level Security. Never hard-code, display, or commit passwords or service-role keys. Use only the Supabase project URL and publishable key in browser code; keep privileged operations server-side. Preserve examples/ and existing teaching files. Work on a branch and wait for human review before shipping.
+- **Experience:** A practical HB Design & Construction portal with coordinated green and yellow, clear property cards, and a focused account/dashboard flow. Do not use the “dash away” language or a large University of Oregon O; this is not an official University of Oregon site.
+- **Test:** A manager can sign in and manage a property with a photo; a renter can sign up, browse listings, submit an application and a service request; a renter cannot access manager controls or another renter's records; the database and storage policies reject unauthorized access.
 
-Approved listing details will replace clearly labeled sample listings before publication. Rent payments, payment tracking, renter applications, and permanent property management are planned features that need separate secure services.
+Rent payment processing and payment tracking remain out of scope until a separate PCI-compliant payment provider is selected. Use fictional/sample property data until approved listings are provided.
