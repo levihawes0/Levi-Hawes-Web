@@ -19,17 +19,17 @@ After STOP 1, help the student propose and approve the six TARGET lines and one 
 
 ## My standing rule
 
-Require renters to select exactly one property they are renting before submitting a service request, and include that property in the pre-addressed email.
+Only an approved manager account may create, edit, delete, or upload photos for properties. A renter may submit only their own application and service request, and cannot view another renter's records.
 
 ## Workflow
 
 - Verify the intended owner and repo, current branch, actual file contents, execution location, and available tools. Prove a usable preview instead of promising a particular browser.
 - If key choices are missing, ask a few focused questions. Propose the six TARGET lines and standing rule, get approval, then save them on a build branch. Do not silently choose the student's purpose or alter the guardrails.
 - Read the saved SPEC and applicable AGENTS before building and before a follow-up change. Explain the relevant rule briefly.
-- Build one page and one primary interaction with ordinary HTML, CSS, and JavaScript plus approved local assets. Do not impose the coastal example's topic, data, or colors.
+- Build the approved secure rental portal with server-side authorization, Supabase Auth, persistent data, and secure photo storage. Do not impose the coastal example's topic, data, or colors.
 - Preserve `examples/`, shared teaching docs, and publishing settings during a student's personal build. Changes to these require an explicit maintainer request. Keep the instructor example self-contained.
 - Separate reference imagery from factual sources. Use licensed or approved assets; label illustrative or fictional content. Do not fabricate metrics, testimonials, integrations, live conditions, or verification.
-- Do not add secrets, private records, runtime model calls, a backend, a required paid service, or unsolicited analytics.
+- Never hard-code or commit passwords, service-role keys, database credentials, or private renter records. Enforce manager and renter permissions with server-side checks and Supabase Row Level Security. Do not add runtime model calls or unsolicited analytics.
 - Use safe text rendering, keyboard-operable controls, visible focus, readable contrast, responsive layouts, and reduced-motion support. Prefer short, purposeful transitions over perpetual motion.
 - Run relevant functional and boundary checks. Preview the actual proposed branch before approval and report checks not run. Screenshots or code diffs alone do not establish interactive correctness.
 - After human preview approval, open a PR only when requested. Summarize changed files and tests. Do not merge or publish without explicit approval.
